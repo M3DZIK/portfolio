@@ -13,7 +13,7 @@
 
   <h1>Hello, I'm Oskar</h1>
 
-  <p>I'm a self-taught programmer. I use Fedora Linux and I like open source software.</p>
+  <p>I'm a 15yo self-taught software engineer. I use Arch Linux with hyprland and I like open source software.</p>
 
   <footer>
     <a href={links.github}>
