@@ -1,7 +1,7 @@
 <script lang="ts">
   import { links } from './config'
   import Avatar from './lib/Avatar.svelte'
-  import Discord from './lib/icons/Discord.svelte'
+  import Matrix from './lib/icons/Matrix.svelte'
   import GitHub from './lib/icons/GitHub.svelte'
   import GitLab from './lib/icons/GitLab.svelte'
   import Google from './lib/icons/Google.svelte'
@@ -28,8 +28,8 @@
       <Google />
     </a>
 
-    <a href={links.discord}>
-      <Discord />
+    <a href={links.matrix}>
+      <Matrix  />
     </a>
 
     <a href={links.reddit}>
