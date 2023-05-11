@@ -13,7 +13,7 @@
 
   <h1>Hello, I'm Oskar</h1>
 
-  <p>I'm a 15yo self-taught software engineer. I use Arch Linux with hyprland and I like open source software.</p>
+  <p>I'm a 15yo self-taught software engineer. I use Fedora with KDE. I am currently working on the <a href="https://librepass.medzik.dev">LibrePass</a> project</p>
 
   <footer>
     <a href={links.github}>
