@@ -7,7 +7,10 @@
 	import FaGithub from "svelte-icons/fa/FaGithub.svelte";
 	import FaGitlab from "svelte-icons/fa/FaGitlab.svelte";
 	import FaCreditCard from "svelte-icons/fa/FaCreditCard.svelte";
+	import FaYoutube from "svelte-icons/fa/FaYoutube.svelte";
+	import FaTelegram from "svelte-icons/fa/FaTelegram.svelte";
 	import MdEmail from "svelte-icons/md/MdEmail.svelte";
+	import MdSecurity from "svelte-icons/md/MdSecurity.svelte";
 
 	import SkillCard from "$lib/SkillCard.svelte";
 	import Svelte from "$lib/icons/Svelte.svelte";
@@ -57,7 +60,7 @@
 	</div>
 </div>
 
-<div class="min-h-full mx-auto flex justify-center items-center variant-filled-primary p-16">
+<div class="mx-auto flex justify-center items-center bg-primary-100 p-16">
 	<div class="container space-y-10">
 		<h2 class="h2 text-center card-header">Languages</h2>
 
@@ -88,3 +91,49 @@
 		</div>
 	</div>
 </div>
+
+<div class="mx-auto flex justify-center items-center bg-secondary-100 p-16">
+	<div class="container space-y-10">
+		<h2 class="h2 text-center card-header">My Project</h2>
+
+		<div class="grid grid-cols-1 gap-4">
+			<a href="https://librepass.medzik.dev" target="_blank">
+				<SkillCard
+					icon={MdSecurity}
+					title="LibrePass"
+					description="Currently, I'm developing LibrePass, a password manager, driven by the belief in online privacy and security. My goal is to create a secure and convenient tool for managing passwords."
+				/>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="mx-auto flex justify-center items-center bg-tertiary-100 p-16">
+	<div class="container space-y-10">
+		<h2 class="h2 text-center card-header">Instances</h2>
+
+		<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+			<a href="https://piped.medzik.dev" target="_blank">
+				<SkillCard
+					icon={FaYoutube}
+					title="Piped"
+					description="An alternative privacy-friendly YouTube frontend."
+				/>
+			</a>
+
+			<a href="https://teledrive.medzik.dev" target="_blank">
+				<SkillCard
+					icon={FaTelegram}
+					title="TeleDrive"
+					description="Your free unlimited cloud storage service using the Telegram API."
+				/>
+			</a>
+		</div>
+	</div>
+</div>
+
+<footer class="container mx-auto flex justify-center items-center p-6">
+	<div class="text-on-primary-token opacity-75">
+		&copy; 2023 Medzik
+	</div>
+</footer>
