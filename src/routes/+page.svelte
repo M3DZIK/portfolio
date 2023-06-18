@@ -8,6 +8,12 @@
 	import avatar from '../assets/avatar.avif'
 </script>
 
+<svelte:head>
+	<title>Medzik</title>
+	<meta name="description" content="I'm a self-taught programmer with a passion for open-source software. Currently working on LibrePass, a password manager, and using Fedora with KDE. Explore my portfolio for more projects and achievements.">
+	<meta name="keywords" content="self-taught programmer, open-source software, LibrePass, password manager, Fedora, KDE, portfolio, projects, achievements">
+</svelte:head>
+
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="max-w-[640px] variant-glass rounded-container-token p-6 grid grid-cols-3 gap-8 items-center shadow-xl">
 		<img src={avatar} class="w-full aspect-square rounded-full" alt="Avatar" />
