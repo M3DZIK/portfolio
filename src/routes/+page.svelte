@@ -1,8 +1,15 @@
 <script>
+	import { ProgressBar } from "@skeletonlabs/skeleton";
+
+	import DiJava from 'svelte-icons/di/DiJava.svelte'
+	import DiGo from 'svelte-icons/di/DiGo.svelte'
+	import DiJavascript from 'svelte-icons/di/DiJavascript1.svelte'
+	import FaGithub from "svelte-icons/fa/FaGithub.svelte";
+	import FaGitlab from "svelte-icons/fa/FaGitlab.svelte";
+	import FaCreditCard from "svelte-icons/fa/FaCreditCard.svelte";
+	import MdEmail from "svelte-icons/md/MdEmail.svelte";
+
 	import SkillCard from "$lib/SkillCard.svelte";
-	import Java from "$lib/icons/Java.svelte";
-	import Golang from "$lib/icons/Golang.svelte";
-	import JavaScript from "$lib/icons/JavaScript.svelte";
 	import Svelte from "$lib/icons/Svelte.svelte";
 
 	import avatar from '../assets/avatar.avif'
@@ -15,16 +22,38 @@
 </svelte:head>
 
 <div class="container h-full mx-auto flex justify-center items-center">
-	<div class="max-w-[640px] variant-glass rounded-container-token p-6 grid grid-cols-3 gap-8 items-center shadow-xl">
-		<img src={avatar} class="w-full aspect-square rounded-full" alt="Avatar" />
+	<div class="max-w-[640px] variant-glass rounded-container-token shadow-xl">
+		<div class="grid grid-cols-3 gap-8 items-center p-6">
+			<img src={avatar} class="w-full aspect-square rounded-full" alt="Avatar" />
 
-		<div class="col-span-2 space-y-2">
-			<div class="text-on-primary-token text-lg opacity-75">Self-Taught Programmer</div>
+			<div class="col-span-2 space-y-2">
+				<div class="text-on-primary-token text-lg opacity-75">Self-Taught Programmer</div>
 
-			<div class="text-on-primary-token font-bold text-xl sm:text-3xl">Oskar</div>
+				<div class="text-on-primary-token font-bold text-xl sm:text-3xl">Oskar</div>
 
-			<div class="text-on-primary-token text-lg sm:text-2xl">Creating the Future</div>
+				<div class="text-on-primary-token text-lg sm:text-2xl">Creating the Future</div>
+			</div>
 		</div>
+
+		<ProgressBar rounded="rounded-none" />
+
+		<footer class="grid grid-cols-4 place-items-center p-6 gap-10">
+			<a class="btn-icon bg-surface-200 p-2" href="https://github.com/M3DZIK">
+				<FaGithub />
+			</a>
+
+			<a class="btn-icon bg-surface-200 p-2" href="https://gitlab.com/Medzik">
+				<FaGitlab />
+			</a>
+
+			<a class="btn-icon bg-surface-200 p-2" href="mailto:me@medzik.dev">
+				<MdEmail />
+			</a>
+
+			<a class="btn-icon bg-surface-200 p-2" href="https://liberapay.com/Medzik/">
+				<FaCreditCard />
+			</a>
+		</footer>
 	</div>
 </div>
 
@@ -34,19 +63,19 @@
 
 		<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
 			<SkillCard
-				icon={Java}
+				icon={DiJava}
 				title="Java/Kotlin"
 				description="After several years of writing code, Java and Kotlin seem to work best for me."
 			/>
 
 			<SkillCard
-				icon={Golang}
+				icon={DiGo}
 				title="Go"
 				description="Golang is my second favorite language because it is fast and friendly to write."
 			/>
 
 			<SkillCard
-				icon={JavaScript}
+				icon={DiJavascript}
 				title="JavaScript"
 				description="Unfortunately, the use of JavaScript is a must in web development."
 			/>
