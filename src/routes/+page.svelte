@@ -74,7 +74,7 @@
 			<SkillCard
 				icon={DiGo}
 				title="Go"
-				description="Golang is my second favorite language because it is fast and friendly to write."
+				description="Golang is my second favorite language because it is fast and easy to use."
 			/>
 
 			<SkillCard
