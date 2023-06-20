@@ -24,7 +24,7 @@
 	<meta name="keywords" content="self-taught programmer, open-source software, LibrePass, password manager, Fedora, KDE, portfolio, projects, achievements">
 </svelte:head>
 
-<div class="container h-full mx-auto flex justify-center items-center">
+<div class="first-gradient h-full mx-auto flex justify-center items-center">
 	<div class="max-w-[640px] variant-glass rounded-container-token shadow-xl">
 		<div class="grid grid-cols-3 gap-8 items-center p-6">
 			<img src={avatar} class="w-full aspect-square rounded-full" alt="Avatar" />
@@ -137,3 +137,11 @@
 		&copy; 2023 Medzik
 	</div>
 </footer>
+
+<style lang="postcss">
+	.first-gradient {
+		background-image:
+			radial-gradient(at 0% 0%, rgba(var(--color-secondary-500) / 0.33) 0px, transparent 50%),
+			radial-gradient(at 98% 1%, rgba(var(--color-error-500) / 0.33) 0px, transparent 50%);
+	}
+</style>
