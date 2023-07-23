@@ -15,7 +15,7 @@
 	import SkillCard from "$lib/SkillCard.svelte";
 	import Svelte from "$lib/icons/Svelte.svelte";
 
-	import avatar from '../assets/avatar.avif'
+	import avatar from '../assets/avatar.svg'
 </script>
 
 <svelte:head>

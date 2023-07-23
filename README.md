@@ -1,5 +1,5 @@
 # [Portfolio](https://medzik.dev)
 
-![image](https://github.com/M3DZIK/portfolio/assets/87065584/160a190c-e39a-4801-8ee6-d5a89104e6b1)
+![image](https://github.com/M3DZIK/portfolio/assets/87065584/f283d0fd-1e4b-4aed-a057-bee4a21e03d0)
 
 License: MIT
