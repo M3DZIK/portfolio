@@ -8,7 +8,6 @@
 	import FaGitlab from "svelte-icons/fa/FaGitlab.svelte";
 	import FaCreditCard from "svelte-icons/fa/FaCreditCard.svelte";
 	import FaYoutube from "svelte-icons/fa/FaYoutube.svelte";
-	import FaTelegram from "svelte-icons/fa/FaTelegram.svelte";
 	import MdEmail from "svelte-icons/md/MdEmail.svelte";
 	import MdSecurity from "svelte-icons/md/MdSecurity.svelte";
 
@@ -96,8 +95,8 @@
 	<div class="container space-y-10">
 		<h2 class="h2 text-center card-header">My Project</h2>
 
-		<div class="grid grid-cols-1 gap-4">
-			<a href="https://librepass.medzik.dev" target="_blank">
+		<div class="flex justify-center">
+			<a href="https://librepass.medzik.dev" target="_blank" class="max-w-xl">
 				<SkillCard
 					icon={MdSecurity}
 					title="LibrePass"
@@ -112,20 +111,12 @@
 	<div class="container space-y-10">
 		<h2 class="h2 text-center card-header">Instances</h2>
 
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+		<div class="flex justify-center">
 			<a href="https://piped.medzik.dev" target="_blank">
 				<SkillCard
 					icon={FaYoutube}
 					title="Piped"
 					description="An alternative privacy-friendly YouTube frontend."
-				/>
-			</a>
-
-			<a href="https://teledrive.medzik.dev" target="_blank">
-				<SkillCard
-					icon={FaTelegram}
-					title="TeleDrive"
-					description="Your free unlimited cloud storage service using the Telegram API."
 				/>
 			</a>
 		</div>
@@ -134,7 +125,7 @@
 
 <footer class="container mx-auto flex justify-center items-center p-6">
 	<div class="text-on-primary-token opacity-75">
-		&copy; 2023 Medzik
+		Medzik ;)
 	</div>
 </footer>
 
