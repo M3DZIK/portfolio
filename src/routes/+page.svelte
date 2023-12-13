@@ -1,18 +1,13 @@
 <script>
     import { ProgressBar } from '@skeletonlabs/skeleton';
 
-    import DiJava from 'svelte-icons/di/DiJava.svelte';
-    import DiGo from 'svelte-icons/di/DiGo.svelte';
-    import DiJavascript from 'svelte-icons/di/DiJavascript1.svelte';
     import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
     import FaGitlab from 'svelte-icons/fa/FaGitlab.svelte';
     import FaCreditCard from 'svelte-icons/fa/FaCreditCard.svelte';
-    import FaYoutube from 'svelte-icons/fa/FaYoutube.svelte';
     import MdEmail from 'svelte-icons/md/MdEmail.svelte';
     import MdSecurity from 'svelte-icons/md/MdSecurity.svelte';
 
-    import SkillCard from '$lib/SkillCard.svelte';
-    import Svelte from '$lib/icons/Svelte.svelte';
+    import Card from '$lib/Card.svelte';
 
     import avatar from '../assets/avatar.svg';
 </script>
@@ -29,7 +24,7 @@
     />
 </svelte:head>
 
-<div class="first-gradient h-full mx-auto flex justify-center items-center">
+<div class="card-gradient min-h-[100vh] mx-auto flex justify-center items-center">
     <div class="max-w-[640px] variant-glass rounded-container-token shadow-xl">
         <div class="grid grid-cols-3 gap-8 items-center p-6">
             <img src={avatar} class="w-full aspect-square rounded-full" alt="Avatar" />
@@ -43,7 +38,7 @@
             </div>
         </div>
 
-        <ProgressBar rounded="rounded-none" />
+        <ProgressBar rounded="rounded-none" value={100} />
 
         <footer class="grid grid-cols-4 place-items-center p-6 gap-10">
             <a class="btn-icon bg-surface-200 p-2" href="https://github.com/M3DZIK">
@@ -63,47 +58,27 @@
             </a>
         </footer>
     </div>
-</div>
 
-<div class="mx-auto flex justify-center items-center bg-primary-100 p-16">
-    <div class="container space-y-10">
-        <h2 class="h2 text-center card-header">Languages</h2>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <SkillCard
-                icon={DiJava}
-                title="Java/Kotlin"
-                description="After several years of writing code, Java and Kotlin seem to work best for me."
-            />
-
-            <SkillCard
-                icon={DiGo}
-                title="Go"
-                description="Golang is my second favorite language because it is fast and easy to use."
-            />
-
-            <SkillCard
-                icon={DiJavascript}
-                title="JavaScript"
-                description="Unfortunately, the use of JavaScript is a must in web development."
-            />
-
-            <SkillCard
-                icon={Svelte}
-                title="Svelte"
-                description="However, sometimes when I need to write a website, I use Svelte."
-            />
-        </div>
+    <div class="absolute bottom-4">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="h-8 w-8 text-on-primary-token animate-bounce"
+        >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
     </div>
 </div>
 
-<div class="mx-auto flex justify-center items-center bg-secondary-100 p-16">
+<div class="project-gradient mx-auto flex justify-center items-center p-16">
     <div class="container space-y-10">
         <h2 class="h2 text-center card-header">My Project</h2>
 
         <div class="flex justify-center">
             <a href="https://librepass.medzik.dev" target="_blank" class="max-w-xl">
-                <SkillCard
+                <Card
                     icon={MdSecurity}
                     title="LibrePass"
                     description="Currently, I'm developing LibrePass, a password manager, driven by the belief in online privacy and security. My goal is to create a secure and convenient tool for managing passwords."
@@ -113,29 +88,15 @@
     </div>
 </div>
 
-<div class="mx-auto flex justify-center items-center bg-tertiary-100 p-16">
-    <div class="container space-y-10">
-        <h2 class="h2 text-center card-header">Instances</h2>
-
-        <div class="flex justify-center">
-            <a href="https://piped.medzik.dev" target="_blank">
-                <SkillCard
-                    icon={FaYoutube}
-                    title="Piped"
-                    description="An alternative privacy-friendly YouTube frontend."
-                />
-            </a>
-        </div>
-    </div>
-</div>
-
-<footer class="container mx-auto flex justify-center items-center p-6">
-    <div class="text-on-primary-token opacity-75">Medzik ;)</div>
-</footer>
-
 <style lang="postcss">
-    .first-gradient {
+    .card-gradient {
         background-image: radial-gradient(at 0% 0%, rgba(var(--color-secondary-500) / 0.33) 0px, transparent 50%),
-            radial-gradient(at 98% 1%, rgba(var(--color-error-500) / 0.33) 0px, transparent 50%);
+            radial-gradient(at 98% 1%, rgba(var(--color-error-500) / 0.33) 0px, transparent 50%),
+            radial-gradient(at 0% 100%, rgba(var(--color-secondary-500) / 0.5) 0px, transparent 50%);
+    }
+
+    .project-gradient {
+        background-image: radial-gradient(at 0% 0%, rgba(var(--color-secondary-500) / 0.5) 0px, transparent 50%),
+            radial-gradient(at 100% 100%, rgba(var(--color-primary-500) / 0.24) 0px, transparent 50%);
     }
 </style>
