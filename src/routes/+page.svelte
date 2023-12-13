@@ -77,7 +77,7 @@
         <h2 class="h2 text-center card-header">My Project</h2>
 
         <div class="flex justify-center">
-            <a href="https://librepass.medzik.dev" target="_blank" class="max-w-xl">
+            <a href="https://librepass.org" target="_blank" class="max-w-xl">
                 <Card
                     icon={MdSecurity}
                     title="LibrePass"
