@@ -5,10 +5,7 @@
 </script>
 
 <div class="card variant-glass md:p-10 shadow-lg space-y-4 text-center btn whitespace-normal grid">
-    <div
-        class="mx-auto variant-glass rounded-2xl p-2"
-        style="width: 50px; height: 50px;"
-    >
+    <div class="mx-auto variant-glass rounded-2xl p-2" style="width: 50px; height: 50px;">
         <svelte:component this={icon} />
     </div>
 
