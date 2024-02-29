@@ -40,7 +40,7 @@
 
         <ProgressBar rounded="rounded-none" value={100} />
 
-        <footer class="grid grid-cols-5 place-items-center p-6 gap-10">
+        <footer class="grid grid-cols-4 place-items-center p-6 gap-10">
             <a class="btn-icon bg-surface-200 p-2" href="https://github.com/M3DZIK">
                 <FaGithub />
             </a>
