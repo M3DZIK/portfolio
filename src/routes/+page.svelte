@@ -2,7 +2,6 @@
     import { ProgressBar } from '@skeletonlabs/skeleton';
 
     import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
-    import FaGitlab from 'svelte-icons/fa/FaGitlab.svelte';
     import FaCreditCard from 'svelte-icons/fa/FaCreditCard.svelte';
     import MdEmail from 'svelte-icons/md/MdEmail.svelte';
     import MdSecurity from 'svelte-icons/md/MdSecurity.svelte';
@@ -44,10 +43,6 @@
         <footer class="grid grid-cols-5 place-items-center p-6 gap-10">
             <a class="btn-icon bg-surface-200 p-2" href="https://github.com/M3DZIK">
                 <FaGithub />
-            </a>
-
-            <a class="btn-icon bg-surface-200 p-2" href="https://gitlab.com/Medzik">
-                <FaGitlab />
             </a>
 
             <a class="btn-icon bg-surface-200 p-2" href="https://signal.me/#eu/XIn9cgQ4+J9++45w66S350g29P7HWFAT3S9LOV18maUsbuxsZIFP5rAfJM1mtFW0">
