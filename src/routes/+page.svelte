@@ -10,6 +10,7 @@
 
     import avatar from '../assets/avatar.svg';
     import SignalIcon from '../lib/Signal.svelte';
+    import Arrow from '$lib/Arrow.svelte';
 </script>
 
 <svelte:head>
@@ -59,16 +60,8 @@
         </footer>
     </div>
 
-    <div class="absolute bottom-4">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="h-8 w-8 text-on-primary-token animate-bounce"
-        >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
+    <div class="absolute bottom-4 h-8 w-8 text-on-primary-token animate-bounce">
+        <Arrow />
     </div>
 </div>
 
