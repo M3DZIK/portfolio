@@ -2,6 +2,8 @@ import { skeleton } from '@skeletonlabs/tw-plugin';
 import { join } from 'path';
 import type { Config } from 'tailwindcss';
 
+import { medzikTheme } from './theme';
+
 export default {
     darkMode: 'class',
     content: [
@@ -14,7 +16,7 @@ export default {
     plugins: [
         skeleton({
             themes: {
-                preset: ['skeleton']
+                custom: [medzikTheme]
             }
         })
     ]
