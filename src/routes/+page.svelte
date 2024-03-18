@@ -11,6 +11,13 @@
     import photo from '../assets/photo.jpg';
     import SignalIcon from '../lib/Signal.svelte';
     import Arrow from '$lib/Arrow.svelte';
+
+    function scrollBottom() {
+        window.scrollTo({
+            top: document.body.scrollHeight,
+            behavior: 'smooth',
+        });
+    }
 </script>
 
 <svelte:head>
@@ -60,9 +67,9 @@
         </footer>
     </div>
 
-    <div class="absolute bottom-16 h-8 w-8 text-on-primary-token animate-bounce">
+    <button class="absolute bottom-16 h-8 w-8 text-on-primary-token animate-bounce" on:click={scrollBottom}>
         <Arrow />
-    </div>
+    </button>
 </div>
 
 <div class="project-gradient mx-auto flex justify-center items-center p-16">
