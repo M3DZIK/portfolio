@@ -60,7 +60,7 @@
         </footer>
     </div>
 
-    <div class="absolute bottom-4 h-8 w-8 text-on-primary-token animate-bounce">
+    <div class="absolute bottom-16 h-8 w-8 text-on-primary-token animate-bounce">
         <Arrow />
     </div>
 </div>
