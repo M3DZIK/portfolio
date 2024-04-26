@@ -5,7 +5,6 @@
     import MdEmail from 'svelte-icons/md/MdEmail.svelte';
     import MdSecurity from 'svelte-icons/md/MdSecurity.svelte';
 
-    import Card from '$lib/Card.svelte';
     import SignalIcon from '$lib/Signal.svelte';
     import Arrow from '$lib/Arrow.svelte';
 
