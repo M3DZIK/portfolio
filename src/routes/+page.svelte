@@ -91,14 +91,12 @@
     .card-gradient {
         background-image: radial-gradient(at 0% 0%, rgba(var(--color-secondary-500) / 0.33) 0px, transparent 50%),
             radial-gradient(at 98% 1%, rgba(var(--color-success-500) / 0.33) 0px, transparent 50%),
-            radial-gradient(at 0% 100%, rgba(var(--color-success-500) / 0.5) 0px, transparent 50%),
-            radial-gradient(at 100% 100%, rgba(var(--color-warning-500) / 0.5) 0px, transparent 50%);
+            radial-gradient(at 0% 100%, rgba(var(--color-primary-500) / 0.33) 0px, transparent 50%),
+            radial-gradient(at 100% 100%, rgba(var(--color-tertiary-500) / 0.33) 0px, transparent 50%);
     }
 
     .project-gradient {
-        background-image: radial-gradient(at 0% 0%, rgba(var(--color-success-500) / 0.5) 0px, transparent 50%),
-            radial-gradient(at 100% 0%, rgba(var(--color-warning-500) / 0.5) 0px, transparent 50%),
-            radial-gradient(at 0% 100%, rgba(var(--color-error-500) / 0.5) 0px, transparent 50%),
-            radial-gradient(at 100% 100%, rgba(var(--color-primary-500) / 0.5) 0px, transparent 50%);
+        background-image: radial-gradient(at 0% 0%, rgba(var(--color-primary-500) / 0.33) 0px, transparent 50%),
+            radial-gradient(at 100% 0%, rgba(var(--color-tertiary-500) / 0.33) 0px, transparent 50%);
     }
 </style>
