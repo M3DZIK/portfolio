@@ -34,7 +34,7 @@
             <img src={photo} class="w-full aspect-square rounded-full" alt="" />
 
             <div class="col-span-2 space-y-2">
-                <div class="text-on-primary-token text-lg opacity-75">Self-Taught Developer</div>
+                <div class="text-on-primary-token text-lg opacity-75">Software Developer</div>
 
                 <div class="text-on-primary-token font-bold text-xl sm:text-3xl">Oskar</div>
 
