@@ -23,7 +23,7 @@
             <div class="col-span-2 space-y-2">
                 <div class="text-on-primary-token text-lg opacity-75">Software Developer</div>
 
-                <div class="text-on-primary-token font-bold text-xl sm:text-3xl">Oskar</div>
+                <div class="text-on-primary-token font-bold text-xl sm:text-3xl">Oskar Karpiński</div>
 
                 <div class="text-on-primary-token text-lg sm:text-2xl">Creating the Future</div>
             </div>

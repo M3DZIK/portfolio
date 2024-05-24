@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-    <title>Medzik</title>
+    <title>Oskar Karpiński</title>
 
     <meta
         name="description"
