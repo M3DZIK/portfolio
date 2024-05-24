@@ -1,12 +1,9 @@
 <script>
     import { ProgressBar } from '@skeletonlabs/skeleton';
-
-    import FaGithub from 'svelte-icons/fa/FaGithub.svelte';
-    import MdEmail from 'svelte-icons/md/MdEmail.svelte';
-    import MdSecurity from 'svelte-icons/md/MdSecurity.svelte';
-
-    import SignalIcon from '$lib/Signal.svelte';
-    import Arrow from '$lib/Arrow.svelte';
+    
+    import { Icon } from '@steeze-ui/svelte-icon'
+    import { Email, Dns, Security, ArrowDownward } from '@steeze-ui/material-design-icons'
+    import { Github, SignalMessenger } from '@steeze-ui/font-awesome'
 
     import photo from '../assets/photo.jpg';
 
@@ -45,18 +42,18 @@
 
         <footer class="grid grid-cols-3 place-items-center p-6 gap-10">
             <a class="btn-icon bg-surface-200 p-2" href="https://github.com/M3DZIK">
-                <FaGithub />
+                <Icon src="{Github}" />
             </a>
 
             <a
                 class="btn-icon bg-surface-200 p-2"
                 href="https://signal.me/#eu/XIn9cgQ4+J9++45w66S350g29P7HWFAT3S9LOV18maUsbuxsZIFP5rAfJM1mtFW0"
             >
-                <SignalIcon />
+                <Icon src={SignalMessenger} />
             </a>
 
             <a class="btn-icon bg-surface-200 p-2" href="mailto:me@medzik.dev">
-                <MdEmail />
+                <Icon src={Email} />
             </a>
 
             <!-- <a class="btn-icon bg-surface-200 p-2" href="https://liberapay.com/Medzik/">
@@ -66,7 +63,7 @@
     </div>
 
     <button class="absolute bottom-16 h-8 w-8 text-on-primary-token animate-bounce" on:click={scrollBottom}>
-        <Arrow />
+        <Icon src={ArrowDownward} />
     </button>
 </div>
 
@@ -74,17 +71,17 @@
     <div class="container space-y-10">
         <h2 class="h2 text-center card-header">Featured Project</h2>
 
-        <div class="flex justify-center">
+        <div class="flex justify-center gap-8 flex-col md:flex-row">
             <a href="https://librepass.org" target="_blank" class="max-w-xl">
                 <div class="card variant-filled-error bg-opacity-25 md:p-10 shadow-lg space-y-4 text-center btn whitespace-normal grid">
                     <div class="mx-auto variant-filled-error bg-opacity-50 rounded-2xl p-2" style="width: 50px; height: 50px;">
-                        <MdSecurity />
+                        <Icon src={Security} />
                     </div>
-                
+
                     <h3 class="h3">
                         LibrePass
                     </h3>
-                
+
                     <p class="opacity-85">
                         LibrePass is an open-source password manager that prioritizes security and ease of use.
                     </p>
