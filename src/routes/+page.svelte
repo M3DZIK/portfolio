@@ -69,11 +69,11 @@
 
 <div class="project-gradient mx-auto flex justify-center items-center p-16">
     <div class="container space-y-10">
-        <h2 class="h2 text-center card-header">Featured Project</h2>
+        <h2 class="h2 text-center card-header">Featured Projects</h2>
 
         <div class="flex justify-center gap-8 flex-col md:flex-row">
-            <a href="https://librepass.org" target="_blank" class="max-w-xl">
-                <div class="card variant-filled-error bg-opacity-25 md:p-10 shadow-lg space-y-4 text-center btn whitespace-normal grid">
+            <a href="https://librepass.org" target="_blank" class="max-w-xl w-full">
+                <div class="card variant-filled-error bg-opacity-25 p-4 md:p-10 shadow-lg space-y-4 text-center btn whitespace-normal grid h-full">
                     <div class="mx-auto variant-filled-error bg-opacity-50 rounded-2xl p-2" style="width: 50px; height: 50px;">
                         <Icon src={Security} />
                     </div>
@@ -83,7 +83,23 @@
                     </h3>
 
                     <p class="opacity-85">
-                        LibrePass is an open-source password manager that prioritizes security and ease of use.
+                        An open-source password manager that prioritizes security and ease of use.
+                    </p>
+                </div>
+            </a>
+
+            <a href="https://hsauth.medzik.dev" target="_blank" class="max-w-xl w-full">
+                <div class="card variant-filled-primary bg-opacity-25 p-4 md:p-10 shadow-lg space-y-4 text-center btn whitespace-normal grid h-full">
+                    <div class="mx-auto variant-filled-primary bg-opacity-50 rounded-2xl p-2" style="width: 50px; height: 50px;">
+                        <Icon src={Dns} />
+                    </div>
+                
+                    <h3 class="h3">
+                        HSAuth Library
+                    </h3>
+                
+                    <p class="opacity-85">
+                        A user authentication algorithm which was created to eliminate the need to send the password or even its hash to the server.
                     </p>
                 </div>
             </a>
