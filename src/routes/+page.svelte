@@ -4,6 +4,7 @@
     import HSAuthProjectCard from '$lib/sections/projects/HSAuthProjectCard.svelte';
     import LibrePassProjectCard from '$lib/sections/projects/LibrePassProjectCard.svelte';
     import JavaOTPProjectCard from '$lib/sections/projects/JavaOTPProjectCard.svelte';
+    import AndroidUtilsCard from '$lib/sections/projects/AndroidUtilsCard.svelte';
 </script>
 
 <svelte:head>
@@ -21,4 +22,5 @@
     <LibrePassProjectCard />
     <HSAuthProjectCard />
     <JavaOTPProjectCard />
+    <AndroidUtilsCard />
 </ProjectsCard>
