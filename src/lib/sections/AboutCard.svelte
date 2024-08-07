@@ -5,8 +5,6 @@
     import { Email, ArrowDownward } from '@steeze-ui/material-design-icons'
     import { Github, SignalMessenger } from '@steeze-ui/font-awesome'
 
-    import photo from '../../assets/photo.jpg';
-
     function scrollBottom() {
         window.scrollTo({
             top: document.body.scrollHeight,
@@ -18,7 +16,7 @@
 <div class="card-gradient min-h-[100vh] mx-auto flex justify-center items-center">
     <div class="max-w-[640px] variant-glass rounded-container-token shadow-xl">
         <div class="grid grid-cols-3 gap-8 items-center p-6">
-            <img src={photo} class="w-full aspect-square rounded-full" alt="" />
+            <img src="https://avatars.githubusercontent.com/u/87065584?v=4" class="w-full aspect-square rounded-full" alt="" />
 
             <div class="col-span-2 space-y-2">
                 <div class="text-on-primary-token text-lg opacity-75">Software Developer</div>
