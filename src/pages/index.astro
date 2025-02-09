@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import Pill from "../components/Pill.astro";
 import Skills from "../components/Skills.astro";
+import Socials from "../components/Socials.astro";
 
 import background from "../assets/background.svg";
 ---
@@ -10,7 +11,7 @@ import background from "../assets/background.svg";
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
 
 	<main class="h-full">
-		<section class="flex justify-center items-center mx-auto gap-8 px-4 pt-[25vh] pb-12">
+		<section class="flex justify-center items-center mx-auto gap-8 px-4 pt-12 md:pt-[25vh] pb-12">
 			<div class="flex flex-col gap-4">
 				<div class="flex flex-col gap-1">
 					<h1 class="font-bold">
@@ -19,9 +20,9 @@ import background from "../assets/background.svg";
 						</span>
 					</h1>
 
-					<span class="text-xl md:text-3xl font-bold text-center">
-						aka <span class="text-pink-700">medzik</span> and also <span class="text-pink-700">untypeable</span>
-					</span>
+					<!--<span class="text-xl md:text-3xl font-bold text-center">-->
+					<!--	aka <span class="text-pink-700">medzik</span> and also <span class="text-pink-700">untypeable</span>-->
+					<!--</span>-->
 				</div>
 
 				<h2 class="text-2xl md:text-3xl">
@@ -45,6 +46,8 @@ import background from "../assets/background.svg";
 		</section>
 
 		<Skills />
+
+		<Socials />
 	</main>
 </Layout>
 
