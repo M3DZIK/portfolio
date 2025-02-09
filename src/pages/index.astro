@@ -12,21 +12,33 @@ import background from "../assets/background.svg";
 	<main class="h-full">
 		<section class="flex justify-center items-center mx-auto gap-8 px-4 pt-[25vh] pb-12">
 			<div class="flex flex-col gap-4">
-				<h1 class="text-4xl md:text-6xl font-bold">
-					Hello, my name is <span class="text-pink-500">Oskar Karpiński</span>
-				</h1>
+				<div class="flex flex-col gap-1">
+					<h1 class="font-bold">
+						<span class="text-4xl md:text-6xl font-bold">
+							Hello, my name is <span class="text-pink-700">Oskar Karpiński</span>
+						</span>
+					</h1>
+
+					<span class="text-xl md:text-3xl font-bold text-center">
+						aka <span class="text-pink-700">medzik</span> and also <span class="text-pink-700">untypeable</span>
+					</span>
+				</div>
 
 				<h2 class="text-2xl md:text-3xl">
 					I am a Creative Developer living in Poland
 				</h2>
 
-				<div class="flex gap-4">
+				<div class="flex flex-col md:flex-row gap-4">
 					<Pill icon="code">
 						Full-stack Developer
 					</Pill>
 
 					<Pill icon="server">
 						DevOps Engineer
+					</Pill>
+
+					<Pill icon="server">
+						Cryptography Specialist
 					</Pill>
 				</div>
 			</div>
