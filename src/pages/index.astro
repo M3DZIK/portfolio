@@ -1,11 +1,49 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import Pill from "../components/Pill.astro";
+import Skills from "../components/Skills.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import background from "../assets/background.svg";
 ---
 
 <Layout>
-	<Welcome />
+	<img id="background" src={background.src} alt="" fetchpriority="high" />
+
+	<main class="h-full">
+		<section class="flex justify-center items-center mx-auto gap-8 px-4 pt-[25vh] pb-12">
+			<div class="flex flex-col gap-4">
+				<h1 class="text-4xl md:text-6xl font-bold">
+					Hello, my name is <span class="text-pink-500">Oskar Karpiński</span>
+				</h1>
+
+				<h2 class="text-2xl md:text-3xl">
+					I am a Creative Developer living in Poland
+				</h2>
+
+				<div class="flex gap-4">
+					<Pill icon="code">
+						Full-stack Developer
+					</Pill>
+
+					<Pill icon="server">
+						DevOps Engineer
+					</Pill>
+				</div>
+			</div>
+		</section>
+
+		<Skills />
+	</main>
 </Layout>
+
+<style>
+	#background {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		filter: blur(100px);
+	}
+</style>
