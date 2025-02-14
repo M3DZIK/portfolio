@@ -3,26 +3,18 @@ import Layout from '../layouts/Layout.astro';
 import Pill from "../components/Pill.astro";
 import Skills from "../components/Skills.astro";
 import Socials from "../components/Socials.astro";
-
-import background from "../assets/background.svg";
 ---
 
 <Layout>
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
-
-	<main class="h-full">
+	<main class="h-full bg-gradient-to-r from-pink-200 to-purple-200">
 		<section class="flex justify-center items-center mx-auto gap-8 px-4 pt-12 md:pt-[25vh] pb-12">
 			<div class="flex flex-col gap-4">
 				<div class="flex flex-col gap-1">
 					<h1 class="font-bold">
 						<span class="text-4xl md:text-6xl font-bold">
-							Hello, my name is <span class="text-pink-700">Oskar Karpiński</span>
+							Hello, my name is <span class="text-pink-900">Oskar Karpiński</span>
 						</span>
 					</h1>
-
-					<!--<span class="text-xl md:text-3xl font-bold text-center">-->
-					<!--	aka <span class="text-pink-700">medzik</span> and also <span class="text-pink-700">untypeable</span>-->
-					<!--</span>-->
 				</div>
 
 				<h2 class="text-2xl md:text-3xl">
@@ -50,15 +42,3 @@ import background from "../assets/background.svg";
 		<Socials />
 	</main>
 </Layout>
-
-<style>
-	#background {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: -1;
-		filter: blur(100px);
-	}
-</style>
