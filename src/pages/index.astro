@@ -1,44 +1,60 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Pill from "../components/Pill.astro";
-import Skills from "../components/Skills.astro";
-import Socials from "../components/Socials.astro";
+import { Icon } from "astro-icon/components";
 ---
 
 <Layout>
-	<main class="min-h-full bg-gradient-to-r from-pink-200 to-purple-200">
-		<section class="flex justify-center items-center mx-auto gap-8 px-4 pt-12 md:pt-[25vh] pb-12">
-			<div class="flex flex-col gap-4">
-				<div class="flex flex-col gap-1">
-					<h1 class="font-bold">
-						<span class="text-4xl md:text-6xl font-bold">
-							Hello, my name is <span class="text-pink-900">Oskar Karpiński</span>
-						</span>
-					</h1>
-				</div>
+	<main class="min-h-full bg-[#f9f2ed]">
+		<section class="flex flex-col justify-center mx-auto min-h-[100vh] md:min-h-0 px-4 pt-12 md:pt-[25vh] pb-12 max-w-5xl space-y-4">
+			<h1 class="text-3xl md:text-5xl">
+				Hi, I'm Oskar Karpiński
+			</h1>
 
-				<h2 class="text-2xl md:text-3xl">
-					I am a Creative Developer living in Poland
-				</h2>
+			<h2 class="text-xl md:text-2xl">
+				I'm a Creative Developer specializing in creating mobile and server-side applications
+			</h2>
 
-				<div class="flex flex-col md:flex-row gap-4">
-					<Pill icon="code">
-						Full-stack Developer
-					</Pill>
+			<a href="#about">
+				<button class="bg-black hover:cursor-pointer hover:bg-black/80 text-white px-6 py-4 text-xl rounded-sm">
+					About Me
+				</button>
+			</a>
+		</section>
 
-					<Pill icon="server">
-						DevOps Engineer
-					</Pill>
+		<section class="flex flex-col justify-center mx-auto min-h-[100vh] md:min-h-0 gap-8 px-4 pt-12 md:pt-[25vh] pb-12 md:max-w-5xl" id="about">
+			<div class="space-y-6">
+				<h1 class="text-3xl md:text-5xl">
+					About Me
+				</h1>
 
-					<Pill icon="server">
-						Cryptography Specialist
-					</Pill>
+				<p class="text-xl md:text-2xl">
+					I'm a a passionate developer from Poland with a strong focus on building secure,
+					scalable, and innovative applications.
+				</p>
+
+				<p class="md:text-xl">
+					I specialize in Rust, Go, JavaScript, Java, and Kotlin, leveraging these technologies to create
+					efficient and robust software solutions. My interests revolve around encryption, cybersecurity,
+					AI development, and blockchain technology. I enjoy exploring new ways to enhance security,
+					optimize system performance, and push the boundaries of what’s possible with artificial intelligence.
+				</p>
+
+				<div class="flex gap-6">
+					<a href="https://github.com/M3DZIK" target="_blank">
+						<button class="bg-black hover:cursor-pointer hover:bg-black/80 text-white px-6 py-4 text-xl flex items-center gap-2 rounded-md">
+							<Icon name="github" />
+							GitHub
+						</button>
+					</a>
+
+					<a href="https://instagram.com/untypeable" target="_blank">
+						<button class="bg-black hover:cursor-pointer hover:bg-black/80 text-white px-6 py-4 text-xl flex items-center gap-2 rounded-md">
+							<Icon name="instagram" />
+							Instagram
+						</button>
+					</a>
 				</div>
 			</div>
 		</section>
-
-		<Skills />
-
-		<Socials />
 	</main>
 </Layout>
