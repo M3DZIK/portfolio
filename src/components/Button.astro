@@ -1,10 +1,7 @@
 ---
-import { Icon } from "astro-icon/components";
-
-const { href, icon } = Astro.props;
+const { href } = Astro.props;
 ---
 
 <a href={href} target="_blank" class="bg-black hover:cursor-pointer hover:bg-black/80 text-white px-6 py-4 text-xl flex items-center gap-2 rounded-md">
-	{ icon && <Icon name={icon} /> }
 	<slot />
 </a>
