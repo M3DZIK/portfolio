@@ -1,6 +1,6 @@
 ---
-import { Icon } from "astro-icon/components";
 import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
 ---
 
 <Layout>
@@ -14,11 +14,9 @@ import Layout from '../layouts/Layout.astro';
 				I'm a Creative Developer specializing in creating mobile and server-side applications
 			</h2>
 
-			<a href="#about">
-				<button class="bg-black hover:cursor-pointer hover:bg-black/80 text-white px-6 py-4 text-xl rounded-sm">
-					About Me
-				</button>
-			</a>
+			<div class="flex">
+				<Button href="#about">About Me</Button>
+			</div>
 		</section>
 
 		<section class="bg-[#f4e9df] md:mt-12">
@@ -42,26 +40,11 @@ import Layout from '../layouts/Layout.astro';
 				</p>
 
 				<div class="flex justify-center flex-wrap gap-6">
-					<a href="https://github.com/M3DZIK" target="_blank">
-						<button class="bg-black hover:cursor-pointer hover:bg-black/80 text-white px-6 py-4 text-xl flex items-center gap-2 rounded-md">
-							<Icon name="github" />
-							GitHub
-						</button>
-					</a>
+					<Button href="https://github.com/M3DZIK" icon="github">GitHub</Button>
 
-					<a href="https://instagram.com/untypeable" target="_blank">
-						<button class="bg-black hover:cursor-pointer hover:bg-black/80 text-white px-6 py-4 text-xl flex items-center gap-2 rounded-md">
-							<Icon name="instagram" />
-							Instagram
-						</button>
-					</a>
+					<Button href="https://instagram.com/untypeable" icon="instagram">Instagram</Button>
 
-					<a href="mailto:me@medzik.dev" target="_blank">
-						<button class="bg-black hover:cursor-pointer hover:bg-black/80 text-white px-6 py-4 text-xl flex items-center gap-2 rounded-md">
-							<Icon name="email" />
-							E-Mail
-						</button>
-					</a>
+					<Button href="mailto:me@medzik.dev" icon="email">E-Mail</Button>
 				</div>
 			</div>
 		</section>
