@@ -1,6 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 import Layout from '../layouts/Layout.astro';
+import librepass from '../assets/librepass.png'
 ---
 
 <Layout>
@@ -22,7 +23,7 @@ import Layout from '../layouts/Layout.astro';
 		</section>
 
 		<section class="bg-[#F9F2ED] md:mt-12">
-			<div class="flex flex-col justify-center mx-auto min-h-[100svh] md:min-h-0 px-4 py-12 md:py-[25vh] pb-12 md:max-w-5xl gap-6" id="about">
+			<div class="flex flex-col justify-center mx-auto min-h-[100svh] md:min-h-0 px-4 py-12 md:py-[25vh] md:max-w-5xl gap-6" id="about">
 				<h1 class="text-4xl md:text-5xl">
 					About Me
 				</h1>
@@ -59,6 +60,28 @@ import Layout from '../layouts/Layout.astro';
 						</button>
 					</a>
 				</div>
+			</div>
+		</section>
+
+		<section class="bg-[#FBF7F4] md:mt-12">
+			<h1 class="flex mx-auto md:max-w-5xl px-4 md:text-7xl text-5xl pt-12">
+				Projects
+			</h1>
+
+			<div class="flex flex-col md:flex-row justify-center mx-auto min-h-[100svh] md:min-h-0 px-4 py-16 md:max-w-5xl items-center gap-8">
+				<div class="flex flex-col gap-8 md:gap-12">
+					<h2 class="text-4xl md:text-5xl">
+						LibrePass
+					</h2>
+
+					<p class="text-xl md:text-2xl">
+						A password management app with automatic synchronization across all devices.
+						Features advanced encryption and hashing for maximum security.
+						Currently, the project is no longer in development.
+					</p>
+				</div>
+
+				<img src={librepass.src} class="max-w-2xs md:max-w-sm" alt="librepass mobile app screenshot"/>
 			</div>
 		</section>
 	</main>
