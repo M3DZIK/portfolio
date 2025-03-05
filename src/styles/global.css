@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+    --font-inter: 'Inter';
+}
+
 html {
     scroll-behavior: smooth;
 }

@@ -5,15 +5,15 @@ import librepass from '../assets/librepass.png'
 ---
 
 <Layout>
-	<main class="min-h-full bg-[#FBF7F4]">
-		<section class="flex flex-col justify-center mx-auto min-h-[100svh] md:min-h-0 px-4 pt-12 md:py-[30vh] pb-12 max-w-5xl space-y-4">
-			<h1 class="text-4xl md:text-5xl">
+	<main class="min-h-full bg-[#FBF7F4] font-inter">
+		<section class="flex flex-col justify-center mx-auto min-h-[100svh] md:min-h-0 px-4 pt-12 md:py-[30vh] pb-12 max-w-5xl gap-4">
+			<h1 class="text-3xl sm:text-4xl md:text-6xl">
 				Hi, I'm Oskar Karpiński
 			</h1>
 
-			<h3 class="text-xl md:text-2xl">
+			<h2 class="text-xl md:text-2xl">
 				I am a Creative Developer specializing in creating mobile and server-side applications
-			</h3>
+			</h2>
 
 			<div class="flex gap-6 md:gap-8">
 				<a href="#about">
@@ -32,8 +32,8 @@ import librepass from '../assets/librepass.png'
 		</section>
 
 		<section class="bg-[#F9F2ED] md:mt-12">
-			<div class="flex flex-col justify-center mx-auto min-h-[100svh] md:min-h-0 px-4 py-12 md:py-[25vh] md:max-w-5xl gap-6" id="about">
-				<h1 class="text-4xl md:text-5xl">
+			<div class="flex flex-col justify-center mx-auto min-h-[100svh] md:min-h-0 px-4 py-12 md:py-[25vh] md:max-w-5xl gap-5 md:gap-6" id="about">
+				<h1 class="text-4xl md:text-6xl">
 					About Me
 				</h1>
 
@@ -41,7 +41,7 @@ import librepass from '../assets/librepass.png'
 					I'm a passionate developer from Poland and a high school student
 				</p>
 
-				<p class="text-xl">
+				<p class="text-lg md:text-xl text-gray-800">
 					I'm 17 years old, a student, and a developer focused on building high-performance software
 					with an emphasis on encryption, cybersecurity, artificial intelligence, blockchain technology,
 					security and performance optimization.
@@ -73,18 +73,19 @@ import librepass from '../assets/librepass.png'
 		</section>
 
 		<section class="bg-[#FBF7F4] md:mt-12" id="projects">
-			<div class="flex mx-auto text-center md:text-start md:max-w-5xl px-4 text-5xl md:text-7xl pt-12 justify-center md:justify-start">
+			<h1 class="flex text-4xl md:text-6xl gap-2 md:gap-4 mx-auto text-center md:text-start md:max-w-5xl px-4 pt-12 justify-center md:justify-start">
+				<Icon name="list-check" />
 				Projects
-			</div>
+			</h1>
 
 			<div class="flex flex-col md:flex-row justify-center mx-auto px-4 py-24 md:py-32 md:max-w-5xl items-center gap-8">
 				<div class="flex flex-col gap-8 md:gap-12">
-					<h2 class="flex items-center text-4xl md:text-5xl justify-center gap-2">
+					<h2 class="flex items-center text-4xl md:text-5xl justify-center gap-2 text-orange-950">
 						<Icon name="librepass" />
 						LibrePass
 					</h2>
 
-					<p class="text-xl md:text-2xl">
+					<p class="text-xl md:text-2xl text-gray-800">
 						A password management app with automatic synchronization across all devices.
 						Features advanced encryption and hashing for maximum security.
 						Currently, the project is no longer in development.
